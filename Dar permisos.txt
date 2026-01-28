@@ -1,3 +1,5 @@
+# 🧠 Lo que voy hacer en este apartado es dar permisos a un solo programa en un solo equipo, en AD, para actualizar el programa sin pedir la contraseña de administrador.
+
 1️⃣ Identifica dónde está instalado SAGE
 Normalmente:
 C:\Program Files\Sage\
@@ -16,11 +18,23 @@ Concede:
 ⚠️ NO le des Control total, con Modificar suele ser suficiente.
 
 3️⃣ Permisos en el registro (MUY IMPORTANTE para SAGE)
-Muchos SAGE fallan al actualizar por el registro.
-Revisa estas rutas (depende versión):
+🧠 Muchos SAGE fallan al actualizar por el registro. Cuando SAGE intenta actualizar, quiere cambiar la versión, añadir o modificar claves, marcar que el update fue correcto.
+🧠 Guarda versión, rutas, parámetros del producto
+Revisa estas posibles rutas (depende versión):
 -----------------------------------------------------
+# registro de usuarios
+HKEY_CURRENT_USER\Software\Sage
+# con 64 bits (HKEY_LOCAL_MACHINE)
 HKEY_LOCAL_MACHINE\SOFTWARE\Sage
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Sage
+HKEY_LOCAL_MACHINE\SOFTWARE\Sage\Sage50
+HKEY_LOCAL_MACHINE\SOFTWARE\Sage\Contabilidad
+HKEY_LOCAL_MACHINE\SOFTWARE\Sage\Nomina
+HKEY_LOCAL_MACHINE\SOFTWARE\Sage\Version
+# con 32 bits en Windows 64 bits (HKEY_LOCAL_MACHINE)
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Sage\Sage50
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Sage\Contabilidad
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Sage\Nomina
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Sage\Version
 -----------------------------------------------------
 Pasos:
     regedit
@@ -29,3 +43,4 @@ Pasos:
     Dale Control total o al menos Escritura
 
 👉 Esto no da permisos de admin, solo acceso a esas claves.
+
