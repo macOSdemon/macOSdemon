@@ -58,4 +58,133 @@ Si no está → añádelo manualmente
 	~/Library/Containers/com.microsoft.Excel
 	~/Library/Group Containers/UBF8T346G9.Office
 Reinicia
+
 Instala Excel de nuevo (App Store o Microsoft)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅ Solución en orden (hazlas tal cual)
+1️⃣ Comprueba si Excel abre “en vacío”
+
+Abre Excel sin abrir ningún archivo
+
+¿Se abre una hoja nueva en blanco?
+
+❌ No abre o da error → Excel está roto → ve al punto 4
+
+✅ Abre en blanco → sigue
+
+2️⃣ Revisa permisos de archivos (clave en macOS)
+
+Finder → cualquier Excel → clic derecho → Obtener información
+
+Abajo, en Compartir y permisos
+
+Tu usuario debe tener: Leer y escribir
+
+Si no:
+
+Pulsa el 🔒
+
+Cambia a Leer y escribir
+
+Aplica a archivos contenidos
+
+3️⃣ Restablecer Excel (esto arregla MUCHÍSIMOS casos)
+
+Con Excel cerrado:
+
+Finder → Ir → Ir a la carpeta
+
+Pega esto:
+
+~/Library/Containers/
+
+
+Borra estas carpetas (solo Excel, tranquilo):
+
+com.microsoft.Excel
+com.microsoft.Office
+
+
+Reinicia el Mac
+
+Abre Excel otra vez
+
+👉 No borra documentos, solo configuración.
+
+4️⃣ Reparar / reinstalar Office (recomendado si es Combalia)
+
+Abre Microsoft Outlook o Word
+
+Menú Ayuda → Buscar actualizaciones
+
+Instala todas las actualizaciones
+
+Si sigue igual:
+
+Desinstala Office completo
+
+Reinicia
+
+Reinstala desde el portal corporativo de Combalia
+
+⚠️ Importante: no reinstales desde App Store si tu licencia es corporativa.
+
+5️⃣ Comprobación rápida
+
+Prueba abrir:
+
+Un Excel nuevo creado en tu Mac
+
+Un Excel muy simple (1 celda)
+
+Si tampoco abre → 100% instalación dañada.
+
+🧠 Conclusión clara
+
+👉 No es un problema de archivos
+👉 Es Excel / Office en macOS
+👉 Se soluciona reiniciando configuración o reinstalando
