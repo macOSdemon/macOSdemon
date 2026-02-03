@@ -1,3 +1,11 @@
+word
+~/Library/Containers/com.microsoft.Word/Data/Library/Preferences/
+
+rm -rf ~/Library/Containers/com.microsoft.Word
+rm -rf ~/Library/Containers/com.microsoft.Excel
+
+
+
 =============================================================================
 [F O R M A · 0]::
 
@@ -204,4 +212,5 @@ Si tampoco abre → 100% instalación dañada.
 👉 No es un problema de archivos
 👉 Es Excel / Office en macOS
 👉 Se soluciona reiniciando configuración o reinstalando
+
 
