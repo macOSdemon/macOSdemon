@@ -1,0 +1,61 @@
+=============================================================================
+[F O R M A · 1]::
+
+# Cierra Excel completamente
+
+# 🔥 1 - Finder > Ir > Ir a la carpeta
+~/Library/Containers/com.microsoft.Excel/Data/Library/Preferences/
+
+# 🔥 2 - Mueve estos archivos al Escritorio (como backup)
+- com.microsoft.Excel.plist
+- cualquier archivo que empiece por Excel
+
+📌 Excel recreará esos archivos automáticamente.
+
+👉 Esto soluciona el problema en el 80–90% de los casos
+
+
+=============================================================================
+[F O R M A · 2]::
+
+# Restablecer Office completo
+
+# 🔥 1 - Ve a:
+~/Library/Group Containers/
+
+# 🔥 2 - Mover esta carpeta al escritorio (como backup)
+UBF8T346G9.Office
+
+Reinicia el Mac
+Abre Excel
+⚠️ No borra documentos, solo configuración
+
+
+=============================================================================
+[F O R M A · 3]::
+
+Excel necesita permiso para acceder a archivos.
+
+Configuración del sistema > Privacidad y seguridad > Archivos y carpetas
+
+Asegúrate de que Microsoft Excel tenga acceso a:
+	- Documentos
+	- Escritorio
+	- Descargas
+
+Si no está → añádelo manualmente
+
+
+
+
+
+
+=============================================================================
+[🧨 SI NADA FUNCIONA (última opción, definitiva)]::
+
+- Elimina Excel de Aplicaciones
+- Borra estas carpetas:
+	~/Library/Containers/com.microsoft.Excel
+	~/Library/Group Containers/UBF8T346G9.Office
+Reinicia
+Instala Excel de nuevo (App Store o Microsoft)

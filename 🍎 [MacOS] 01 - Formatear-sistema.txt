@@ -1,0 +1,31 @@
+========[2026/01/23]================================================================================
+
+# en este caso vamos a formatear los equipos debido al programa de Workshop
+# Workshop tiene validez con la version de macOS de Sequoia, pero nos a dicho el que hace la instalación que tambien funciona con Tahoe de manera no-oficial
+
+	> macOS 26 (Tahoe): 15 de septiembre de 2025.			~ Instalación que vamos a realizar
+	> macOS 15 (Sequoia): 16 de septiembre de 2024.			~ Instalación recomendada en la documentación oficial de Workshop (Prinergy)
+	> macOS 14 (Sonoma): 26 de septiembre de 2023.			~ Sistema actual
+
+# para esto además de Workshop tenemos que comprobar que todos los programas que utilizan van a servir para dicha versión (Tahoe).
+# además, si actualizas a la nueva versión y luego instalo el nuevo Workshop no me lo va a permitir
+# por lo que hay que hacer es instalar el nuevo Workshop en el sistema actual (Sonoma) y actualizar luego el sistema (Tahoe)
+
+# para actualizar el sistema lo realizo desde ajustes > actualización de software
+
+# una vez actualizado con los programas instalados con antelación me surgen los siguientes errores:
+# Fallo ethermet : no tengo internet pero si ping
+- Quito los filtros existentes del Firewall
+- Elimino el ethernet esitente y creo otro ethernet nuevo con los mismo detalles (inclullendo el hostname en los DNS de grafometal.local)
+- Elimino programa de ESET y ejecuto la nueva versión (porque la versión anterior de ESET no funciona con Tahoe)
+- Elimino las impresoras y vuelvo a crearlas asociando el driver existente (no hay que volver a instalar el driver)
+
+# 🧑‍🎓 Tenemos un problema con el programa Workshop que intenta abrir el servidor de archivos de kodak con el usuario de Workshop y tienen sus usuarios a parte...
+# Lo que esta sucediendo es que intenta abrir por defecto los archivos con el usuario de kodak en vez de con el de samba
+# Solución de Workshop : al iniciar el pc inicializo la carpeta de "AraxiVolume_FS-Kodak_K" para dejar registrado por defecto nuestro usuario de samba (al entrar en dicha carpeta)
+- Finder > ir > ir a > (servidor de archivos kodak) > "AraxiVolume_FS-Kodak_K" > aceptar
+- Ajustes > Seguridad > Dar permisos completo al disco > + > Workshop
+- Ajustes > Items de inicio > + > "AraxiVolume_FS-Kodak_K"
+
+# Hay un problema con Workshop que a veces se carg antes la carpeta que internet y no se consigue abrir 
+- Finder > ir > ir a > (servidor de archivos kodak) > (arrastrar hasta el último)
