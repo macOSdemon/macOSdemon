@@ -1,5 +1,5 @@
 =============================================================================
-[F O R M A · 0]::
+[F O R M A · -1]::
 
 # Pruebo desde la siguientes rutas (hago una copia en el escritorio y elimino dentro de dichas carpetas las caches, en el caso de que siga sin funcionar recupero del escritorio las que tenía)
 ~/Library/Containers/com.microsoft.Word/Data/Library/Preferences
@@ -217,6 +217,7 @@ Si tampoco abre → 100% instalación dañada.
 👉 No es un problema de archivos
 👉 Es Excel / Office en macOS
 👉 Se soluciona reiniciando configuración o reinstalando
+
 
 
 
