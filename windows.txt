@@ -18,3 +18,12 @@ Administrador de dispositivos
 Adaptadores de red
 Doble clic en el Ethernet
 Pestaña Administración de energía
+
+
+driver
+******************************
+		# crea una nueva carpeta con el nombre "driver" en la unidad USB (D:\)
+		- Export-WindowsDriver -Online -Destination d:\drivers
+
+https://support.microsoft.com/es-es/surface/actualizar-surface-dock-58d8723e-eae8-5e8d-c295-f870f7703633
+
