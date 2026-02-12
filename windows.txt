@@ -8,4 +8,4 @@ Desactivar Inicio rápido
 Cambiar frecuencia con la que el equipo estra en estado de suspensión
 *********************************************************************
 - Cambiar configuración avanzada de energía
-  PCI Express > dministración de energia de estado de vinculos > Nunca
+  PCI Express > dministración de energia de estado de vinculos > Desactivar
